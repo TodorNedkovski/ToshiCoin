@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30804.86
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ToshkoCoin", "ToshkoCoin\ToshkoCoin.csproj", "{9AA41EA1-25B7-4752-B2FD-299FB8D3CD59}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ToshiCoin", "ToshkoCoin\ToshiCoin.csproj", "{9AA41EA1-25B7-4752-B2FD-299FB8D3CD59}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Blockchain", "Blockchain\Blockchain.csproj", "{4E614506-FA1C-4A3A-A65A-A9A0C2A47E6C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Blockchain", "Blockchain\Blockchain.csproj", "{4E614506-FA1C-4A3A-A65A-A9A0C2A47E6C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -1,0 +1,17 @@
+D:\Git\ToshkoCoin\ToshkoCoin\bin\Debug\netcoreapp3.1\ToshiCoin.exe
+D:\Git\ToshkoCoin\ToshkoCoin\bin\Debug\netcoreapp3.1\ToshiCoin.deps.json
+D:\Git\ToshkoCoin\ToshkoCoin\bin\Debug\netcoreapp3.1\ToshiCoin.runtimeconfig.json
+D:\Git\ToshkoCoin\ToshkoCoin\bin\Debug\netcoreapp3.1\ToshiCoin.runtimeconfig.dev.json
+D:\Git\ToshkoCoin\ToshkoCoin\bin\Debug\netcoreapp3.1\ToshiCoin.dll
+D:\Git\ToshkoCoin\ToshkoCoin\bin\Debug\netcoreapp3.1\ToshiCoin.pdb
+D:\Git\ToshkoCoin\ToshkoCoin\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+D:\Git\ToshkoCoin\ToshkoCoin\bin\Debug\netcoreapp3.1\Blockchain.dll
+D:\Git\ToshkoCoin\ToshkoCoin\bin\Debug\netcoreapp3.1\Blockchain.pdb
+D:\Git\ToshkoCoin\ToshkoCoin\obj\Debug\netcoreapp3.1\ToshiCoin.csprojAssemblyReference.cache
+D:\Git\ToshkoCoin\ToshkoCoin\obj\Debug\netcoreapp3.1\ToshiCoin.AssemblyInfoInputs.cache
+D:\Git\ToshkoCoin\ToshkoCoin\obj\Debug\netcoreapp3.1\ToshiCoin.AssemblyInfo.cs
+D:\Git\ToshkoCoin\ToshkoCoin\obj\Debug\netcoreapp3.1\ToshiCoin.csproj.CoreCompileInputs.cache
+D:\Git\ToshkoCoin\ToshkoCoin\obj\Debug\netcoreapp3.1\ToshiCoin.csproj.CopyComplete
+D:\Git\ToshkoCoin\ToshkoCoin\obj\Debug\netcoreapp3.1\ToshiCoin.dll
+D:\Git\ToshkoCoin\ToshkoCoin\obj\Debug\netcoreapp3.1\ToshiCoin.pdb
+D:\Git\ToshkoCoin\ToshkoCoin\obj\Debug\netcoreapp3.1\ToshiCoin.genruntimeconfig.cache

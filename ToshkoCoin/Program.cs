@@ -8,12 +8,25 @@
     {
         public static void Main()
         {
-            Blockchain toshkoCoin = new Blockchain();
-            toshkoCoin.AddBlock(new Block(null, "{sender:Gosho,receiver:Tosho,amount:10}"));
-            toshkoCoin.AddBlock(new Block(null, "{sender:Valeri,receiver:Tosho,amount:5}"));
-            toshkoCoin.AddBlock(new Block(null, "{sender:Pesho,receiver:Tosho,amount:5}"));
+            Blockchain toshiCoin = new Blockchain();
+            toshiCoin.AddBlock(new Block(null, "{sender:Gosho,receiver:Tosho,amount:10}"));
+            toshiCoin.AddBlock(new Block(null, "{sender:Valeri,receiver:Tosho,amount:5}"));
+            toshiCoin.AddBlock(new Block(null, "{sender:Pesho,receiver:Tosho,amount:5}"));
 
-            Console.WriteLine(JsonConvert.SerializeObject(toshkoCoin, Formatting.Indented));
+            Console.WriteLine(toshiCoin.IsValid());
+
+            toshiCoin.GetLatestBlock().Data = "{sender:Pesho,receiver:Tosho,amount:100000}";
+
+            Console.WriteLine(toshiCoin.IsValid());
+
+            toshiCoin.Chain[2].PreviousHash = toshiCoin.Chain[1].Hash;
+            toshiCoin.Chain[2].Hash = toshiCoin.Chain[2].CalculateHash();
+            toshiCoin.Chain[3].PreviousHash = toshiCoin.Chain[2].Hash;
+            toshiCoin.Chain[3].Hash = toshiCoin.Chain[3].CalculateHash();
+
+            Console.WriteLine(toshiCoin.IsValid());
+
+            Console.WriteLine(JsonConvert.SerializeObject(toshiCoin, Formatting.Indented));
         }
     }
 }
