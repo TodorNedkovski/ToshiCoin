@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "aYnBLBxO8eB5ExO8JNFJShe8lniAMhCfC0lOWD6qqFdqruVXCuYGqMXMNSzcfTi+kr4tzJltta03D6UM40q1Dw==",
+  "success": true,
+  "projectFilePath": "D:\\Git\\ToshkoCoin\\ToshkoCoin\\ToshiCoin.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Tedy\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

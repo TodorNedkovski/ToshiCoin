@@ -1,0 +1,17 @@
+C:\Users\Tedy\source\repos\ToshkoCoin\ToshkoCoin\bin\Debug\netcoreapp3.1\Blockchain.dll
+C:\Users\Tedy\source\repos\ToshkoCoin\ToshkoCoin\obj\Debug\netcoreapp3.1\ToshkoCoin.csprojAssemblyReference.cache
+C:\Users\Tedy\source\repos\ToshkoCoin\ToshkoCoin\obj\Debug\netcoreapp3.1\ToshkoCoin.AssemblyInfoInputs.cache
+C:\Users\Tedy\source\repos\ToshkoCoin\ToshkoCoin\obj\Debug\netcoreapp3.1\ToshkoCoin.AssemblyInfo.cs
+C:\Users\Tedy\source\repos\ToshkoCoin\ToshkoCoin\bin\Debug\netcoreapp3.1\ToshkoCoin.exe
+C:\Users\Tedy\source\repos\ToshkoCoin\ToshkoCoin\bin\Debug\netcoreapp3.1\ToshkoCoin.deps.json
+C:\Users\Tedy\source\repos\ToshkoCoin\ToshkoCoin\bin\Debug\netcoreapp3.1\ToshkoCoin.runtimeconfig.json
+C:\Users\Tedy\source\repos\ToshkoCoin\ToshkoCoin\bin\Debug\netcoreapp3.1\ToshkoCoin.runtimeconfig.dev.json
+C:\Users\Tedy\source\repos\ToshkoCoin\ToshkoCoin\bin\Debug\netcoreapp3.1\ToshkoCoin.dll
+C:\Users\Tedy\source\repos\ToshkoCoin\ToshkoCoin\bin\Debug\netcoreapp3.1\ToshkoCoin.pdb
+C:\Users\Tedy\source\repos\ToshkoCoin\ToshkoCoin\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+C:\Users\Tedy\source\repos\ToshkoCoin\ToshkoCoin\bin\Debug\netcoreapp3.1\Blockchain.pdb
+C:\Users\Tedy\source\repos\ToshkoCoin\ToshkoCoin\obj\Debug\netcoreapp3.1\ToshkoCoin.csproj.CoreCompileInputs.cache
+C:\Users\Tedy\source\repos\ToshkoCoin\ToshkoCoin\obj\Debug\netcoreapp3.1\ToshkoCoin.csproj.CopyComplete
+C:\Users\Tedy\source\repos\ToshkoCoin\ToshkoCoin\obj\Debug\netcoreapp3.1\ToshkoCoin.dll
+C:\Users\Tedy\source\repos\ToshkoCoin\ToshkoCoin\obj\Debug\netcoreapp3.1\ToshkoCoin.pdb
+C:\Users\Tedy\source\repos\ToshkoCoin\ToshkoCoin\obj\Debug\netcoreapp3.1\ToshkoCoin.genruntimeconfig.cache

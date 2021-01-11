@@ -1,0 +1,9 @@
+C:\Users\Tedy\source\repos\ToshkoCoin\Blockchain\bin\Debug\netstandard2.0\Blockchain.deps.json
+C:\Users\Tedy\source\repos\ToshkoCoin\Blockchain\bin\Debug\netstandard2.0\Blockchain.dll
+C:\Users\Tedy\source\repos\ToshkoCoin\Blockchain\bin\Debug\netstandard2.0\Blockchain.pdb
+C:\Users\Tedy\source\repos\ToshkoCoin\Blockchain\obj\Debug\netstandard2.0\Blockchain.csprojAssemblyReference.cache
+C:\Users\Tedy\source\repos\ToshkoCoin\Blockchain\obj\Debug\netstandard2.0\Blockchain.AssemblyInfoInputs.cache
+C:\Users\Tedy\source\repos\ToshkoCoin\Blockchain\obj\Debug\netstandard2.0\Blockchain.AssemblyInfo.cs
+C:\Users\Tedy\source\repos\ToshkoCoin\Blockchain\obj\Debug\netstandard2.0\Blockchain.csproj.CoreCompileInputs.cache
+C:\Users\Tedy\source\repos\ToshkoCoin\Blockchain\obj\Debug\netstandard2.0\Blockchain.dll
+C:\Users\Tedy\source\repos\ToshkoCoin\Blockchain\obj\Debug\netstandard2.0\Blockchain.pdb

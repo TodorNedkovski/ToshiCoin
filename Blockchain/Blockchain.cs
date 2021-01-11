@@ -1,0 +1,69 @@
+﻿namespace Blockchain
+{
+    using System;
+    using System.Collections.Generic;
+    using System.Linq;
+    using System.Text;
+
+    public class Blockchain
+    {
+        private IList<Block> chain;
+
+        public Blockchain()
+        {
+            this.InitializeChain();
+            this.AddGenesisBlock();
+        }
+
+        public List<Block> Chain => (List<Block>)chain;
+
+        public void InitializeChain()
+        {
+            chain = new List<Block>();
+        }
+
+        public Block CreateGenesisBlock()
+        {
+            return new Block(null, "{}");
+        }
+
+        public void AddGenesisBlock()
+        {
+            chain.Add(CreateGenesisBlock());
+        }
+
+        public Block GetLatestBlock()
+        {
+            return chain.Last();
+        }
+
+        public bool IsValid()
+        {
+            for (int i = 1; i < this.chain.Count; i++)
+            {
+                Block currentBlock = this.chain[i];
+                Block previousBlock = this.chain[i - 1];
+
+                if (currentBlock.Hash != currentBlock.CalculateHash())
+                {
+                    return false;
+                }
+
+                if (currentBlock.PreviousHash != previousBlock.Hash)
+                {
+                    return false;
+                }
+            }
+            return true;
+        }
+
+        public void AddBlock(Block block)
+        {
+            Block latestBlock = GetLatestBlock();
+            block.Index = latestBlock.Index + 1;
+            block.PreviousHash = latestBlock.Hash;
+            block.Hash = block.CalculateHash();
+            chain.Add(block);
+        }
+    }
+}
