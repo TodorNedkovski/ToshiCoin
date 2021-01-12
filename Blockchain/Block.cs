@@ -14,8 +14,6 @@
 
         public string Hash { get; set; }
 
-        public string Data { get; set; }
-
         public int Nonce { get; set; }
 
         public Block(string hash, string data)
