@@ -17,9 +17,12 @@
 
         public List<Block> Chain => (List<Block>)chain;
 
+        public int Difficulty { get; set; }
+
         public void InitializeChain()
         {
             chain = new List<Block>();
+            this.Difficulty = 2;
         }
 
         public Block CreateGenesisBlock()
@@ -63,6 +66,7 @@
             block.Index = latestBlock.Index + 1;
             block.PreviousHash = latestBlock.Hash;
             block.Hash = block.CalculateHash();
+            block.Mine(this.Difficulty);
             chain.Add(block);
         }
     }

@@ -37,5 +37,15 @@
 
             return Encoding.ASCII.GetString(outputBytes);
         }
+
+        public void Mine(int difficulty)
+        {
+            var leadingZeros = new string('0', difficulty);
+            while (this.Hash == null || this.Hash.Substring(0, difficulty) != leadingZeros)
+            {
+                this.Nonce++;
+                this.Hash = this.CalculateHash();
+            }
+        }
     }
 }
