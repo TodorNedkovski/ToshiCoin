@@ -15,6 +15,9 @@
             this.AddGenesisBlock();
         }
 
+
+        public IList<Transaction> PendingTransactions = new List<Transaction>();
+
         public List<Block> Chain => (List<Block>)chain;
 
         public int Difficulty { get; set; }
@@ -23,6 +26,11 @@
         {
             chain = new List<Block>();
             this.Difficulty = 2;
+        }
+
+        public void CreateTransaction(Transaction transaction)
+        {
+            PendingTransactions.Add(transaction);
         }
 
         public Block CreateGenesisBlock()

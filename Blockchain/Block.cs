@@ -1,8 +1,10 @@
 ﻿namespace Blockchain
 {
     using System;
+    using System.Collections.Generic;
     using System.Security.Cryptography;
     using System.Text;
+    using Newtonsoft.Json;
 
     public class Block
     {
@@ -13,6 +15,8 @@
         public string PreviousHash { get; set; }
 
         public string Hash { get; set; }
+
+        public ICollection<Transaction> Transactions { get; set; }
 
         public int Nonce { get; set; }
 
@@ -30,7 +34,9 @@
         {
             var sha256 = SHA256.Create();
 
-            byte[] bytes = Encoding.ASCII.GetBytes($"{this.TimeStamp} - {this.Data} - {this.Index} - {this.Nonce}");
+            var transactions = JsonConvert.SerializeObject(this.Transactions);
+
+            byte[] bytes = Encoding.ASCII.GetBytes($"{this.TimeStamp} - {transactions} - {this.Index} - {this.Nonce}");
             byte[] outputBytes = sha256.ComputeHash(bytes);
 
             return Encoding.ASCII.GetString(outputBytes);

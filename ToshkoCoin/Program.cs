@@ -34,6 +34,7 @@
             stopwatch.Start();
 
             Blockchain toshiCoin = new Blockchain();
+            toshiCoin.PendingTransactions.Add(new Transaction("Gosho", "Tosho", 10));
             toshiCoin.AddBlock(new Block(null, "{sender:Gosho,receiver:Tosho,amount:10}"));
             toshiCoin.AddBlock(new Block(null, "{sender:Valeri,receiver:Tosho,amount:5}"));
             toshiCoin.AddBlock(new Block(null, "{sender:Pesho,receiver:Tosho,amount:5}"));
