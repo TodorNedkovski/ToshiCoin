@@ -35,7 +35,7 @@
 
         public Block CreateGenesisBlock()
         {
-            return new Block(null, "{}");
+            return new Block(null, new List<Transaction>());
         }
 
         public void AddGenesisBlock()

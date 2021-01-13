@@ -20,17 +20,17 @@
 
         public int Nonce { get; set; }
 
-        public Block(string hash, string data)
+        public Block(string hash, List<Transaction> transactions)
         {
             this.Index = 0;
             this.TimeStamp = DateTime.UtcNow;
             this.PreviousHash = this.PreviousHash;
             this.Hash = hash;
-            this.Data = data;
+            this.Transactions = transactions;
             this.Nonce = 0;
         }
 
-        public string CalculateHash() 
+        public string CalculateHash()
         {
             var sha256 = SHA256.Create();
 
