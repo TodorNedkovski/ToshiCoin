@@ -9,6 +9,8 @@
     {
         private IList<Block> chain;
 
+        private const int reward = 1;
+        
         public Blockchain()
         {
             this.InitializeChain();
