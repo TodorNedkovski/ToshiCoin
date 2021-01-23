@@ -1,12 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "bjI222EOGiJM9N6i3hNNSFnr9Hm0+l6v1iiSIngyMkGAHKOb38ESEQpr/Uby3/dPQZZeR4ZNXiOaHRDJPmjX4A==",
+  "dgSpecHash": "nvb7OMaTQDBoPXUaUyGgzJM7DMZNtR7z3YasPhrAFBzHLuZSTQTTh12HtYkYSqlREjiU2XLQN2Wq40UpS8PSUQ==",
   "success": true,
-  "projectFilePath": "D:\\Git\\ToshkoCoin\\Blockchain\\Blockchain.csproj",
+  "projectFilePath": "/media/todor/Maxtor/Git/ToshiCoin/Blockchain/Blockchain.csproj",
   "expectedPackageFiles": [
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
-    "C:\\Users\\Tedy\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512"
+    "/home/todor/.nuget/packages/microsoft.netcore.platforms/1.1.0/microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "/home/todor/.nuget/packages/netstandard.library/2.0.3/netstandard.library.2.0.3.nupkg.sha512",
+    "/home/todor/.nuget/packages/newtonsoft.json/12.0.3/newtonsoft.json.12.0.3.nupkg.sha512"
   ],
   "logs": []
 }

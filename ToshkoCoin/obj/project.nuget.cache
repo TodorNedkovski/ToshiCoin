@@ -1,10 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "bgBsnqUff8U7dNbuL4hfKqfBox1uWLHyz7HdZ6S24zjy7dkcmwyV2zJwMvJB/IAsBWh5rCqmYZ/lCkeE2fCIDA==",
+  "dgSpecHash": "TCwR8QxXQz+QsHXauXmoYoBfPS30lixqInZPoOpa9iv4Yuyj8/ytyRMMBZPZleq8j7mFb8iqwUUW0rXbHyBepw==",
   "success": true,
-  "projectFilePath": "D:\\Git\\ToshkoCoin\\ToshkoCoin\\ToshiCoin.csproj",
+  "projectFilePath": "/media/todor/Maxtor/Git/ToshiCoin/ToshkoCoin/ToshiCoin.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Tedy\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512"
+    "/home/todor/.nuget/packages/newtonsoft.json/12.0.3/newtonsoft.json.12.0.3.nupkg.sha512",
+    "/home/todor/.nuget/packages/microsoft.netcore.app.ref/3.1.0/microsoft.netcore.app.ref.3.1.0.nupkg.sha512",
+    "/home/todor/.nuget/packages/microsoft.aspnetcore.app.ref/3.1.10/microsoft.aspnetcore.app.ref.3.1.10.nupkg.sha512",
+    "/home/todor/.nuget/packages/microsoft.netcore.app.host.linux-x64/3.1.11/microsoft.netcore.app.host.linux-x64.3.1.11.nupkg.sha512"
   ],
   "logs": []
 }
