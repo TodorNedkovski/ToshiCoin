@@ -1,4 +1,6 @@
-﻿namespace Blockchain
+﻿using System.Reflection;
+
+namespace Blockchain
 {
     using System;
     using System.Collections.Generic;
@@ -18,7 +20,7 @@
         }
 
 
-        public IList<Transaction> PendingTransactions = new List<Transaction>();
+        public List<Transaction> PendingTransactions = new List<Transaction>();
 
         public List<Block> Chain => (List<Block>)chain;
 
@@ -29,6 +31,15 @@
             chain = new List<Block>();
             this.Difficulty = 2;
         }
+
+        public void ProcessPendingTransactions(string minerAddress)  
+        {  
+            Block block = new Block(GetLatestBlock().Hash, PendingTransactions);  
+            AddBlock(block);  
+  
+            PendingTransactions = new List<Transaction>();  
+            CreateTransaction(new Transaction(null, minerAddress, reward));  
+        }  
 
         public void CreateTransaction(Transaction transaction)
         {

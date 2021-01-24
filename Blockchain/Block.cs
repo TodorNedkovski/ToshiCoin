@@ -50,6 +50,8 @@
                 this.Nonce++;
                 this.Hash = this.CalculateHash();
             }
+
+            ;
         }
     }
 }
