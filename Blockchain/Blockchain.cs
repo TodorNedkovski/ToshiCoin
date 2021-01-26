@@ -121,5 +121,10 @@ namespace Blockchain
                 this.Balances[toAddress] += amount;
             }
         }
+
+        public int GetBalance(string address)
+        {
+            return this.Balances[address];
+        }
     }
 }
