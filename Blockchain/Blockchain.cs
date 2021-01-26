@@ -35,11 +35,11 @@ namespace Blockchain
         }
 
         public void ProcessPendingTransactions(string minerAddress)  
-        {  
-            AddBalance(PendingTransactions);
-            
+        {
             Block block = new Block(GetLatestBlock().Hash, PendingTransactions);  
-            AddBlock(block);  
+            AddBlock(block); 
+            
+            AddBalances(PendingTransactions);
   
             PendingTransactions = new List<Transaction>();  
             CreateTransaction(new Transaction(null, minerAddress, reward));  
@@ -95,7 +95,7 @@ namespace Blockchain
             chain.Add(block);
         }
 
-        private void AddBalance(List<Transaction> transactions)
+        private void AddBalances(List<Transaction> transactions)
         {
             foreach (var transaction in transactions)
             {
@@ -103,7 +103,7 @@ namespace Blockchain
                 string toAddress = transaction.ToAddress;
                 int amount = transaction.Amount;
                 
-                if (!this.Balances.ContainsKey(fromAddress))
+                if (!string.IsNullOrEmpty(fromAddress) && !this.Balances.ContainsKey(fromAddress))
                 {
                     this.Balances.Add(fromAddress, 0);
                 }
@@ -113,7 +113,7 @@ namespace Blockchain
                     this.Balances.Add(toAddress, 0);
                 }
 
-                if (this.Balances[fromAddress] - amount > 0)
+                if (!string.IsNullOrEmpty(fromAddress) && this.Balances[fromAddress] - amount > 0)
                 {
                     this.Balances[fromAddress] -= amount;
                 }
