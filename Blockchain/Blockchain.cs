@@ -1,4 +1,5 @@
-﻿using System.Reflection;
+﻿using System.ComponentModel.Design.Serialization;
+using System.Reflection;
 
 namespace Blockchain
 {
@@ -12,14 +13,15 @@ namespace Blockchain
         private IList<Block> chain;
 
         private const int reward = 1;
-        
+
         public Blockchain()
         {
             this.InitializeChain();
             this.AddGenesisBlock();
         }
-
-
+        
+        public Dictionary<string, int> Balances = new Dictionary<string, int>();
+        
         public List<Transaction> PendingTransactions = new List<Transaction>();
 
         public List<Block> Chain => (List<Block>)chain;
@@ -34,6 +36,8 @@ namespace Blockchain
 
         public void ProcessPendingTransactions(string minerAddress)  
         {  
+            AddBalance(PendingTransactions);
+            
             Block block = new Block(GetLatestBlock().Hash, PendingTransactions);  
             AddBlock(block);  
   
@@ -89,6 +93,33 @@ namespace Blockchain
             block.Hash = block.CalculateHash();
             block.Mine(this.Difficulty);
             chain.Add(block);
+        }
+
+        private void AddBalance(List<Transaction> transactions)
+        {
+            foreach (var transaction in transactions)
+            {
+                string fromAddress = transaction.FromAddress;
+                string toAddress = transaction.ToAddress;
+                int amount = transaction.Amount;
+                
+                if (!this.Balances.ContainsKey(fromAddress))
+                {
+                    this.Balances.Add(fromAddress, 0);
+                }
+                
+                if (!this.Balances.ContainsKey(toAddress))
+                {
+                    this.Balances.Add(toAddress, 0);
+                }
+
+                if (this.Balances[fromAddress] - amount > 0)
+                {
+                    this.Balances[fromAddress] -= amount;
+                }
+                
+                this.Balances[toAddress] += amount;
+            }
         }
     }
 }
