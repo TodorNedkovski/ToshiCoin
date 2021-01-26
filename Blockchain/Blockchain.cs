@@ -113,7 +113,9 @@ namespace Blockchain
                     this.Balances.Add(toAddress, 0);
                 }
 
-                if (!string.IsNullOrEmpty(fromAddress) && this.Balances[fromAddress] - amount > 0)
+                if (this.Balances[fromAddress] - amount < 0) continue;
+
+                if (!string.IsNullOrEmpty(fromAddress))
                 {
                     this.Balances[fromAddress] -= amount;
                 }
