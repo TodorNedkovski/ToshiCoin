@@ -3,10 +3,17 @@
     <PropertyGroup>
         <TargetFramework>net5.0</TargetFramework>
         <RootNamespace>P2PServer</RootNamespace>
+        <Authors>Todor Nedkovski</Authors>
     </PropertyGroup>
 
     <ItemGroup>
+      <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
       <PackageReference Include="WebSocketSharp" Version="1.0.3-rc11" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\Blockchain\Blockchain.csproj" />
+      <ProjectReference Include="..\ToshkoCoin\ToshiCoin.csproj" />
     </ItemGroup>
 
 </Project>
