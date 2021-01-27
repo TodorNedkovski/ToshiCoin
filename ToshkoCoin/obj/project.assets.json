@@ -23,6 +23,16 @@
         "runtime": {
           "bin/placeholder/Blockchain.dll": {}
         }
+      },
+      "Core/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "compile": {
+          "bin/placeholder/Core.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Core.dll": {}
+        }
       }
     }
   },
@@ -62,11 +72,17 @@
       "type": "project",
       "path": "../Blockchain/Blockchain.csproj",
       "msbuildProject": "../Blockchain/Blockchain.csproj"
+    },
+    "Core/1.0.0": {
+      "type": "project",
+      "path": "../Core/Core.csproj",
+      "msbuildProject": "../Core/Core.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net5.0": [
       "Blockchain >= 1.0.0",
+      "Core >= 1.0.0",
       "Newtonsoft.Json >= 12.0.3"
     ]
   },
@@ -97,6 +113,9 @@
           "projectReferences": {
             "/media/todor/Maxtor/Git/ToshiCoin/Blockchain/Blockchain.csproj": {
               "projectPath": "/media/todor/Maxtor/Git/ToshiCoin/Blockchain/Blockchain.csproj"
+            },
+            "/media/todor/Maxtor/Git/ToshiCoin/Core/Core.csproj": {
+              "projectPath": "/media/todor/Maxtor/Git/ToshiCoin/Core/Core.csproj"
             }
           }
         }
