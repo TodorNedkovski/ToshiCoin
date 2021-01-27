@@ -7,8 +7,8 @@
 
     public static class Program
     {
-
         public static Blockchain ToshiCoin = new Blockchain();
+        
         public static void Main()
         {
             //
