@@ -1,0 +1,12 @@
+/media/todor/Maxtor/Git/ToshiCoin/P2PServer/bin/Debug/net5.0/P2PServer.deps.json
+/media/todor/Maxtor/Git/ToshiCoin/P2PServer/bin/Debug/net5.0/P2PServer.dll
+/media/todor/Maxtor/Git/ToshiCoin/P2PServer/bin/Debug/net5.0/ref/P2PServer.dll
+/media/todor/Maxtor/Git/ToshiCoin/P2PServer/bin/Debug/net5.0/P2PServer.pdb
+/media/todor/Maxtor/Git/ToshiCoin/P2PServer/obj/Debug/net5.0/P2PServer.csprojAssemblyReference.cache
+/media/todor/Maxtor/Git/ToshiCoin/P2PServer/obj/Debug/net5.0/P2PServer.GeneratedMSBuildEditorConfig.editorconfig
+/media/todor/Maxtor/Git/ToshiCoin/P2PServer/obj/Debug/net5.0/P2PServer.AssemblyInfoInputs.cache
+/media/todor/Maxtor/Git/ToshiCoin/P2PServer/obj/Debug/net5.0/P2PServer.AssemblyInfo.cs
+/media/todor/Maxtor/Git/ToshiCoin/P2PServer/obj/Debug/net5.0/P2PServer.csproj.CoreCompileInputs.cache
+/media/todor/Maxtor/Git/ToshiCoin/P2PServer/obj/Debug/net5.0/P2PServer.dll
+/media/todor/Maxtor/Git/ToshiCoin/P2PServer/obj/Debug/net5.0/ref/P2PServer.dll
+/media/todor/Maxtor/Git/ToshiCoin/P2PServer/obj/Debug/net5.0/P2PServer.pdb

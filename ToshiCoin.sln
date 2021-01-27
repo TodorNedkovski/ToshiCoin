@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ToshiCoin", "ToshkoCoin\Tos
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Blockchain", "Blockchain\Blockchain.csproj", "{4E614506-FA1C-4A3A-A65A-A9A0C2A47E6C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P2PServer", "P2PServer\P2PServer.csproj", "{BCAB4C95-9ED6-4306-88C3-4B73DC561A07}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{4E614506-FA1C-4A3A-A65A-A9A0C2A47E6C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4E614506-FA1C-4A3A-A65A-A9A0C2A47E6C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4E614506-FA1C-4A3A-A65A-A9A0C2A47E6C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BCAB4C95-9ED6-4306-88C3-4B73DC561A07}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BCAB4C95-9ED6-4306-88C3-4B73DC561A07}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BCAB4C95-9ED6-4306-88C3-4B73DC561A07}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BCAB4C95-9ED6-4306-88C3-4B73DC561A07}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
