@@ -11,6 +11,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Blockchain\Blockchain.csproj" />
+    <ProjectReference Include="..\P2P\P2P.csproj" />
   </ItemGroup>
 
 </Project>

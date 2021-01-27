@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/media/todor/Maxtor/Git/ToshiCoin/P2PServer/P2PServer.csproj": {}
+    "/media/todor/Maxtor/Git/ToshiCoin/P2P/P2P.csproj": {}
   },
   "projects": {
-    "/media/todor/Maxtor/Git/ToshiCoin/P2PServer/P2PServer.csproj": {
+    "/media/todor/Maxtor/Git/ToshiCoin/P2P/P2P.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/media/todor/Maxtor/Git/ToshiCoin/P2PServer/P2PServer.csproj",
-        "projectName": "P2PServer",
-        "projectPath": "/media/todor/Maxtor/Git/ToshiCoin/P2PServer/P2PServer.csproj",
+        "projectUniqueName": "/media/todor/Maxtor/Git/ToshiCoin/P2P/P2P.csproj",
+        "projectName": "P2P",
+        "projectPath": "/media/todor/Maxtor/Git/ToshiCoin/P2P/P2P.csproj",
         "packagesPath": "/home/todor/.nuget/packages/",
-        "outputPath": "/media/todor/Maxtor/Git/ToshiCoin/P2PServer/obj/",
+        "outputPath": "/media/todor/Maxtor/Git/ToshiCoin/P2P/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/todor/.nuget/NuGet/NuGet.Config"
@@ -37,6 +37,12 @@
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
+          "dependencies": {
+            "WebSocketSharp": {
+              "target": "Package",
+              "version": "[1.0.3-rc11, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

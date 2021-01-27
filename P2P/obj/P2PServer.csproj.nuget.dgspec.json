@@ -1,0 +1,66 @@
+{
+  "format": 1,
+  "restore": {
+    "/media/todor/Maxtor/Git/ToshiCoin/P2PServer/P2PServer.csproj": {}
+  },
+  "projects": {
+    "/media/todor/Maxtor/Git/ToshiCoin/P2PServer/P2PServer.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/media/todor/Maxtor/Git/ToshiCoin/P2PServer/P2PServer.csproj",
+        "projectName": "P2PServer",
+        "projectPath": "/media/todor/Maxtor/Git/ToshiCoin/P2PServer/P2PServer.csproj",
+        "packagesPath": "/home/todor/.nuget/packages/",
+        "outputPath": "/media/todor/Maxtor/Git/ToshiCoin/P2PServer/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/todor/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "WebSocketSharp": {
+              "target": "Package",
+              "version": "[1.0.3-rc11, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/snap/dotnet-sdk/current/sdk/5.0.102/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
