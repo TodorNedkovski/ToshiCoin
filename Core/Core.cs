@@ -1,7 +1,4 @@
-﻿using System;
-using System.Threading;
-
-namespace Core
+﻿namespace Core
 {
     public class Core
     {
