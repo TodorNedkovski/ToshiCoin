@@ -52,5 +52,13 @@ namespace P2PServer
                 }  
             }  
         }  
+        
+        public void Broadcast(string data)  
+        {  
+            foreach (var item in wsDict)  
+            {  
+                item.Value.Send(data);  
+            }  
+        }  
     }
 }
