@@ -59,6 +59,16 @@ namespace P2PServer
             {  
                 item.Value.Send(data);  
             }  
-        }  
+        }
+        
+        public IList<string> GetServers()  
+        {  
+            IList<string> servers = new List<string>();  
+            foreach (var item in wsDict)  
+            {  
+                servers.Add(item.Key);  
+            }  
+            return servers;  
+        } 
     }
 }
