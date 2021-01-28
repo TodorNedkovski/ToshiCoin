@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "eelipU60iIG0o1Q+/LzqD7i3aVxu2fXFtfRbUigopYdHEwhGViNy5toaodJko8Jg20z42T4qFKAc7p1pluk8oQ==",
+  "dgSpecHash": "FBghDqGoP9exU7/TftHb9Ys85wczWTO4xfapbFA4lsK1nw0KVhX07bm2rs+rUo4xIe98aicjVcuBEsa5Zc0ERQ==",
   "success": true,
   "projectFilePath": "/media/todor/Maxtor/Git/ToshiCoin/Core/Core.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "/home/todor/.nuget/packages/newtonsoft.json/12.0.3/newtonsoft.json.12.0.3.nupkg.sha512"
+  ],
   "logs": []
 }

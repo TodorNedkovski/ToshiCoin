@@ -1,8 +1,12 @@
 ﻿namespace Core
 {
-    public class Core
+    using Blockchain;
+    
+    public static class Core
     {
-        public void Start()
+        public static Blockchain ToshiCoin = new Blockchain();
+        
+        public static void Start()
         {
             
         }

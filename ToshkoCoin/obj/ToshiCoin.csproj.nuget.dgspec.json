@@ -84,7 +84,11 @@
         "frameworks": {
           "net5.0": {
             "targetAlias": "net5.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "/media/todor/Maxtor/Git/ToshiCoin/Blockchain/Blockchain.csproj": {
+                "projectPath": "/media/todor/Maxtor/Git/ToshiCoin/Blockchain/Blockchain.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
@@ -137,9 +141,6 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "/media/todor/Maxtor/Git/ToshiCoin/Blockchain/Blockchain.csproj": {
-                "projectPath": "/media/todor/Maxtor/Git/ToshiCoin/Blockchain/Blockchain.csproj"
-              },
               "/media/todor/Maxtor/Git/ToshiCoin/Core/Core.csproj": {
                 "projectPath": "/media/todor/Maxtor/Git/ToshiCoin/Core/Core.csproj"
               }

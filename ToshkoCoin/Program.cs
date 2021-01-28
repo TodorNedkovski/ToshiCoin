@@ -8,11 +8,9 @@
 
     public static class Program
     {
-        public static Blockchain ToshiCoin = new Blockchain();
-        
         public static void Main()
         {
-            new Core().Start();
+            Core.Start();
         }
     }
 }
