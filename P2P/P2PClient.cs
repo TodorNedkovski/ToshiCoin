@@ -69,6 +69,14 @@ namespace P2PServer
                 servers.Add(item.Key);  
             }  
             return servers;  
+        }
+        
+        public void Close()  
+        {  
+            foreach (var item in wsDict)  
+            {  
+                item.Value.Close();  
+            }  
         } 
     }
 }
