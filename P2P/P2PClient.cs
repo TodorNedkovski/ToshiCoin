@@ -2,7 +2,6 @@ using System;
 using System.Collections.Generic;
 using Transaction = Blockchain.Transaction;
 using Newtonsoft.Json;
-using Core = Core.Core;
 using WebSocketSharp;
 
 namespace P2PServer
@@ -43,6 +42,15 @@ namespace P2PServer
             }  
         }
         
-        
+        public void Send(string url, string data)  
+        {  
+            foreach (var item in wsDict)  
+            {  
+                if (item.Key == url)  
+                {  
+                    item.Value.Send(data);  
+                }  
+            }  
+        }  
     }
 }
