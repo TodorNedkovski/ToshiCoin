@@ -4,7 +4,6 @@ using System.Transactions;
 using Newtonsoft.Json;
 using WebSocketSharp;
 using WebSocketSharp.Server;
-using Blockchain;
 using Transaction = Blockchain.Transaction;
 
 namespace P2PServer
@@ -13,6 +12,7 @@ namespace P2PServer
     {
         bool chainSynched = false;  
         WebSocketServer wss = null;  
+        public Blockchain.Blockchain ToshiCoin = new Blockchain.Blockchain();
   
         public void Start(int port)  
         {
@@ -33,19 +33,19 @@ namespace P2PServer
             {  
                 Blockchain.Blockchain newChain = JsonConvert.DeserializeObject<Blockchain.Blockchain>(e.Data);  
   
-                if (newChain.IsValid() && newChain.Chain.Count > global::Core.Core.ToshiCoin.Chain.Count)  
+                if (newChain.IsValid() && newChain.Chain.Count > ToshiCoin.Chain.Count)  
                 {  
                     List<Transaction> newTransactions = new List<Transaction>();  
                     newTransactions.AddRange(newChain.PendingTransactions);  
-                    newTransactions.AddRange(global::Core.Core.ToshiCoin.PendingTransactions);  
+                    newTransactions.AddRange(ToshiCoin.PendingTransactions);  
   
                     newChain.PendingTransactions = newTransactions;  
-                    global::Core.Core.ToshiCoin = newChain;  
+                    ToshiCoin = newChain;  
                 }  
   
                 if (!chainSynched)  
                 {  
-                    Send(JsonConvert.SerializeObject(global::Core.Core.ToshiCoin));  
+                    Send(JsonConvert.SerializeObject(ToshiCoin));  
                     chainSynched = true;  
                 }  
             }  

@@ -6,6 +6,11 @@
 
     <ItemGroup>
       <ProjectReference Include="..\Blockchain\Blockchain.csproj" />
+      <ProjectReference Include="..\P2P\P2P.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="WebSocketSharp" Version="1.0.3-rc11" />
     </ItemGroup>
 
 </Project>

@@ -13,7 +13,6 @@
 
     <ItemGroup>
       <ProjectReference Include="..\Blockchain\Blockchain.csproj" />
-      <ProjectReference Include="..\Core\Core.csproj" />
     </ItemGroup>
 
 </Project>

@@ -9,6 +9,13 @@ namespace P2PServer
     public class P2PClient
     {
         IDictionary<string, WebSocket> wsDict = new Dictionary<string, WebSocket>();
+
+        private Blockchain.Blockchain ToshiCoin;
+        
+        public P2PClient(Blockchain.Blockchain chain)
+        {
+            this.ToshiCoin = chain;
+        }
         
         public void Connect(string url)
         {
@@ -24,20 +31,20 @@ namespace P2PServer
                     else  
                     {  
                         Blockchain.Blockchain newChain = JsonConvert.DeserializeObject<Blockchain.Blockchain>(e.Data);  
-                        if (newChain.IsValid() && newChain.Chain.Count > global::Core.Core.ToshiCoin.Chain.Count)  
+                        if (newChain.IsValid() && newChain.Chain.Count > this.ToshiCoin.Chain.Count)  
                         {  
                             List<Transaction> newTransactions = new List<Transaction>();  
                             newTransactions.AddRange(newChain.PendingTransactions);  
-                            newTransactions.AddRange(global::Core.Core.ToshiCoin.PendingTransactions);  
+                            newTransactions.AddRange(this.ToshiCoin.PendingTransactions);  
   
                             newChain.PendingTransactions = newTransactions;  
-                            global::Core.Core.ToshiCoin = newChain;  
+                            this.ToshiCoin = newChain;  
                         }  
                     }  
                 };  
                 ws.Connect();  
                 ws.Send("Hi Server");  
-                ws.Send(JsonConvert.SerializeObject(global::Core.Core.ToshiCoin));  
+                ws.Send(JsonConvert.SerializeObject(this.ToshiCoin));  
                 wsDict.Add(url, ws);  
             }  
         }

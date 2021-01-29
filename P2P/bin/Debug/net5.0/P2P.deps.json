@@ -10,7 +10,6 @@
         "dependencies": {
           "Blockchain": "1.0.0",
           "Newtonsoft.Json": "12.0.3",
-          "ToshiCoin": "1.0.0",
           "WebSocketSharp": "1.0.3-rc11"
         },
         "runtime": {
@@ -35,19 +34,11 @@
       },
       "Blockchain/1.0.0": {
         "dependencies": {
-          "Newtonsoft.Json": "12.0.3"
+          "Newtonsoft.Json": "12.0.3",
+          "WebSocketSharp": "1.0.3-rc11"
         },
         "runtime": {
           "Blockchain.dll": {}
-        }
-      },
-      "ToshiCoin/1.0.0": {
-        "dependencies": {
-          "Blockchain": "1.0.0",
-          "Newtonsoft.Json": "12.0.3"
-        },
-        "runtime": {
-          "ToshiCoin.dll": {}
         }
       }
     }
@@ -73,11 +64,6 @@
       "hashPath": "websocketsharp.1.0.3-rc11.nupkg.sha512"
     },
     "Blockchain/1.0.0": {
-      "type": "project",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "ToshiCoin/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

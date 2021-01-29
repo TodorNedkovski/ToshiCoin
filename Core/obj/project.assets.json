@@ -11,17 +11,42 @@
           "lib/netstandard2.0/Newtonsoft.Json.dll": {}
         }
       },
+      "WebSocketSharp/1.0.3-rc11": {
+        "type": "package",
+        "compile": {
+          "lib/websocket-sharp.dll": {}
+        },
+        "runtime": {
+          "lib/websocket-sharp.dll": {}
+        }
+      },
       "Blockchain/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
-          "Newtonsoft.Json": "12.0.3"
+          "Newtonsoft.Json": "12.0.3",
+          "WebSocketSharp": "1.0.3-rc11"
         },
         "compile": {
           "bin/placeholder/Blockchain.dll": {}
         },
         "runtime": {
           "bin/placeholder/Blockchain.dll": {}
+        }
+      },
+      "P2P/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "Blockchain": "1.0.0",
+          "Newtonsoft.Json": "12.0.3",
+          "WebSocketSharp": "1.0.3-rc11"
+        },
+        "compile": {
+          "bin/placeholder/P2P.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/P2P.dll": {}
         }
       }
     }
@@ -58,15 +83,35 @@
         "packageIcon.png"
       ]
     },
+    "WebSocketSharp/1.0.3-rc11": {
+      "sha512": "7VCF7f7zVMOvLGD8LeGS4DVXc8lOcB6kXnUMeTxigu+PMiU+6wW5Olq2gYrDU8vDRKOwFY+5RyBaLyzb8skEzA==",
+      "type": "package",
+      "path": "websocketsharp/1.0.3-rc11",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/websocket-sharp.dll",
+        "lib/websocket-sharp.xml",
+        "websocketsharp.1.0.3-rc11.nupkg.sha512",
+        "websocketsharp.nuspec"
+      ]
+    },
     "Blockchain/1.0.0": {
       "type": "project",
       "path": "../Blockchain/Blockchain.csproj",
       "msbuildProject": "../Blockchain/Blockchain.csproj"
+    },
+    "P2P/1.0.0": {
+      "type": "project",
+      "path": "../P2P/P2P.csproj",
+      "msbuildProject": "../P2P/P2P.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net5.0": [
-      "Blockchain >= 1.0.0"
+      "Blockchain >= 1.0.0",
+      "P2P >= 1.0.0",
+      "WebSocketSharp >= 1.0.3-rc11"
     ]
   },
   "packageFolders": {
@@ -96,6 +141,9 @@
           "projectReferences": {
             "/media/todor/Maxtor/Git/ToshiCoin/Blockchain/Blockchain.csproj": {
               "projectPath": "/media/todor/Maxtor/Git/ToshiCoin/Blockchain/Blockchain.csproj"
+            },
+            "/media/todor/Maxtor/Git/ToshiCoin/P2P/P2P.csproj": {
+              "projectPath": "/media/todor/Maxtor/Git/ToshiCoin/P2P/P2P.csproj"
             }
           }
         }
@@ -109,6 +157,12 @@
     "frameworks": {
       "net5.0": {
         "targetAlias": "net5.0",
+        "dependencies": {
+          "WebSocketSharp": {
+            "target": "Package",
+            "version": "[1.0.3-rc11, )"
+          }
+        },
         "imports": [
           "net461",
           "net462",
@@ -127,5 +181,17 @@
         "runtimeIdentifierGraphPath": "/snap/dotnet-sdk/current/sdk/5.0.102/RuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'WebSocketSharp 1.0.3-rc11' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework 'net5.0'. This package may not be fully compatible with your project.",
+      "libraryId": "WebSocketSharp",
+      "targetGraphs": [
+        "net5.0"
+      ]
+    }
+  ]
 }

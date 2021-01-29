@@ -1,10 +1,22 @@
 {
   "version": 2,
-  "dgSpecHash": "FBghDqGoP9exU7/TftHb9Ys85wczWTO4xfapbFA4lsK1nw0KVhX07bm2rs+rUo4xIe98aicjVcuBEsa5Zc0ERQ==",
+  "dgSpecHash": "damU5Cvm6rBC8rmq4ySaiG7oIQUUexON+K6jqYQjr1Bj9bXdQQ1oBq4EBob7S+dmMCVp8xwVpMgouDA/ZRSq1w==",
   "success": true,
   "projectFilePath": "/media/todor/Maxtor/Git/ToshiCoin/Core/Core.csproj",
   "expectedPackageFiles": [
-    "/home/todor/.nuget/packages/newtonsoft.json/12.0.3/newtonsoft.json.12.0.3.nupkg.sha512"
+    "/home/todor/.nuget/packages/newtonsoft.json/12.0.3/newtonsoft.json.12.0.3.nupkg.sha512",
+    "/home/todor/.nuget/packages/websocketsharp/1.0.3-rc11/websocketsharp.1.0.3-rc11.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'WebSocketSharp 1.0.3-rc11' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework 'net5.0'. This package may not be fully compatible with your project.",
+      "libraryId": "WebSocketSharp",
+      "targetGraphs": [
+        "net5.0"
+      ]
+    }
+  ]
 }

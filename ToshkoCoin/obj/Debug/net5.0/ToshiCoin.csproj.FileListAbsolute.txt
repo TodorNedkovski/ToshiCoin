@@ -18,3 +18,8 @@
 /media/todor/Maxtor/Git/ToshiCoin/ToshkoCoin/obj/Debug/net5.0/ref/ToshiCoin.dll
 /media/todor/Maxtor/Git/ToshiCoin/ToshkoCoin/obj/Debug/net5.0/ToshiCoin.pdb
 /media/todor/Maxtor/Git/ToshiCoin/ToshkoCoin/obj/Debug/net5.0/ToshiCoin.genruntimeconfig.cache
+/media/todor/Maxtor/Git/ToshiCoin/ToshkoCoin/bin/Debug/net5.0/Core.dll
+/media/todor/Maxtor/Git/ToshiCoin/ToshkoCoin/bin/Debug/net5.0/Core.pdb
+/media/todor/Maxtor/Git/ToshiCoin/ToshkoCoin/bin/Debug/net5.0/websocket-sharp.dll
+/media/todor/Maxtor/Git/ToshiCoin/ToshkoCoin/bin/Debug/net5.0/P2P.dll
+/media/todor/Maxtor/Git/ToshiCoin/ToshkoCoin/bin/Debug/net5.0/P2P.pdb

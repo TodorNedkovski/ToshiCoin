@@ -10,3 +10,8 @@
 /media/todor/Maxtor/Git/ToshiCoin/Core/obj/Debug/net5.0/Core.dll
 /media/todor/Maxtor/Git/ToshiCoin/Core/obj/Debug/net5.0/ref/Core.dll
 /media/todor/Maxtor/Git/ToshiCoin/Core/obj/Debug/net5.0/Core.pdb
+/media/todor/Maxtor/Git/ToshiCoin/Core/bin/Debug/net5.0/Blockchain.dll
+/media/todor/Maxtor/Git/ToshiCoin/Core/bin/Debug/net5.0/Blockchain.pdb
+/media/todor/Maxtor/Git/ToshiCoin/Core/obj/Debug/net5.0/Core.csproj.CopyComplete
+/media/todor/Maxtor/Git/ToshiCoin/Core/bin/Debug/net5.0/P2P.dll
+/media/todor/Maxtor/Git/ToshiCoin/Core/bin/Debug/net5.0/P2P.pdb
